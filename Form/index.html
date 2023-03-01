@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="lado">
+        <aside class="options">
+            <h1>Registro de cursos</h1>
+            <div class="botones">
+                <a href="index.html" class="ancla1">Registro de cursos</a>
+                <a href="" class="ancla2">Buscar cursos</a>
+            </div>
+        </aside>
+    </div>
+    
+    <section class="container">
+        <div class="inputs">
+            
+                <div class="complete">
+                    <label>Curso:</label>
+                    <input class= 'text' type="text" id="curso">
+                </div>
+                <div class="complete">
+                    <label>NRC:</label>
+                    <input class= 'text' type="text" id="nrc">
+                </div>
+                <div class="complete">
+                    <label>Profesor:</label>
+                    <input class= 'text' type="text" id="profesor">
+                </div>
+                <div class="complete">
+                    <label>Horario:</label>
+                    <select name="" id="horario">
+                        <option value="">-Seleccione-</option>
+                        <option value="Diurno">Diurno</option>
+                        <option value="Nocturno">Nocturno</option>
+                    </select>
+                </div>
+                <div class="complete">
+                    <label>Campus:</label>
+                    <select name="" id="campus">
+                        <option value="">-Seleccione-</option>
+                        <option value="Perez Zeledon">Perez Zeledon</option>
+                        <option value="Omar Dengo">Omar Dengo</option>
+                        <option value="Coto">Coto</option>
+                    </select>
+                </div>
+                <div class="complete">
+                    <label>Activo:</label>
+                    <input class ='checkbox' type="checkbox" id="activo" checked>
+                </div>
+                <div class="boton">
+                    <button class="add">
+                        <span>Agregar</span>
+                    </button>
+                </div>
+
+        </div>
+        <div class="table">
+            <table class="table-true">
+                <thead >
+                    <tr>
+                        <th class="titulo">
+                                Curso
+                        </th>
+                        <th class="titulo">
+                                Profesor
+                        </th>
+                        <th class="titulo">
+                            Campus
+                        </th>
+                        <th class="titulo">
+                            Horario
+                        </th>
+                        <th class="titulo">
+                                NCR
+                        </th>
+                        <th class="titulo">
+                                Activo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="lista-cursos" class="cursos">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

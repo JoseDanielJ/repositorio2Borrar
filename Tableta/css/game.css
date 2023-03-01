@@ -1,0 +1,67 @@
+body{
+    font-family: 'Press Start 2P',cursive;
+}
+
+.game-screen{
+    width: 100%;
+    height: 100%;
+}
+
+.canvas{
+    width: 100%;
+    height: 100%;
+    background-image: url('/Tableta/images/Fondo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    left: 37%;
+    top: 25%;
+    z-index: 1000;
+}
+
+.menu h1,p{
+    height: 20px;
+}
+
+.menu h1{
+    font-size: 25px;
+}
+
+.restart-button{
+    background-color: chartreuse;
+    border-radius: 5px;
+    border: 3px solid white;
+    box-shadow: 0 0 5px 0 black;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    transition: all 0.25s ease;
+}
+
+.restart-button:hover{
+    background-color: rgb(103, 205, 1);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.blackdrop-blur{
+    filter: blur(5px);
+}
+
+.score-display{
+    position: absolute;
+    top: 0px;
+    z-index: 1000000;
+    color: black;
+    right: 10px;
+}
+

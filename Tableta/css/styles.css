@@ -1,0 +1,268 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(188, 188, 187, 0.626);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablet-padre{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablet{
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 4rem;
+    border-style: double;
+    border-color: #3838386b;
+    display: flex;
+    box-shadow: 0px 0px 20px 0 black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.screen{
+    width: 80%;
+    height: 80%;
+    /* padding-bottom:10px; */
+    margin-bottom: 10px;
+    border-color: rgb(50, 50, 44);
+    border-style: double;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+}
+.home{
+    width: 50px;
+    height: 50px;
+    border-radius: 3rem;
+    border-style: double;
+    border-color: rgba(65, 64, 64, 0.501);
+    margin-top: 2px;
+}
+
+.barra-herramientas{
+    width: 100%;
+    height: 7%;
+    background-color: rgb(55, 47, 37);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    z-index: 51;
+}
+
+.barra-herramientas svg{
+    width: 25px;
+    height: 25px;
+    padding-bottom:2px ;
+    padding-right:5px;
+    z-index: 51;
+}
+.hora{
+    text-align: center;
+    width: 50px;
+}
+
+.bajar{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.principal{
+    width: 100%;
+    min-height: 94%;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 2px;
+    border-radius:  0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    background-image: url('/Tableta/images/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hijo1,.hijo2,.hijo3{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    right: 0px;
+    justify-content: center;
+    position: absolute;
+    transition: 2s ease all;
+    
+}
+
+.hijo2{
+    right: -725px;
+}
+
+.hijo3{
+    left: -725px;
+}
+
+.reloj{
+    margin-top: 10px;
+    width: 125px;
+    height: 125px;
+    border-radius: 5rem;
+    background-color: rgba(240, 248, 255, 0.512);
+    border-color: #fff;
+    border-style: outset;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.822);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reloj .horas12, .horas24{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    transition: 1s ease all;
+    top:45px;
+}
+.reloj .horas12{
+    top: -50px;
+}
+
+.notificaciones{
+    background-color: rgba(44, 41, 41, 0.706);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -300px;
+    transition: 0.5s ease-out all;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 5px;
+    border-radius:  0 0 10px 10px;
+    z-index: 50;
+}
+
+.mensaje{
+    background-color: #d1d0d0d8;
+    border-radius: 5px;
+    padding-left: 30px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    position: relative;
+}
+
+.mensaje span{
+    font-size: 20px;
+    position: absolute;
+    color: rgba(19, 132, 19, 0.864);
+    left: 75px;
+}
+
+.mensaje p{
+    margin-top: 25px;
+    text-align:center;
+}
+
+
+.whatsapp{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    fill: green;
+}
+
+.options{
+    min-width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.321);
+    border: none;
+    z-index: 30;
+}
+
+.options > :hover{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(240, 248, 255, 0.621);
+}
+
+.hijo2{
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:10px;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 50px;
+    border: 5px solid white;
+    box-shadow: 0 0 10px 0 black;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Press Start 2P',cursive;
+    text-decoration: none;
+    font-size: 40px;
+    
+}
+
+.flappy-bird{
+    background-image:url("/Tableta/images/BirdIcon.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+
+}
+.lado{
+    height: 100vh;
+    width: 20vw;
+}
+.container{
+    width: 85%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color:#0fa09b;
+}
+
+.options h1{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+.botones .ancla1, .ancla2{
+    padding-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 95%;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px; 
+    outline:0;
+}
+
+.ancla1{
+    background-color: #0e8d89;
+}
+
+.ancla2{ 
+    background-color: #0fa09b;;
+}
+
+.ancla2:hover{
+    background-color: #086360;
+    color: rgb(251, 251, 123);
+}
+
+.ancla1:hover{
+    color: rgb(251, 251, 123);
+}
+
+.inputs{
+    position: relative;
+    width: 90%;
+    height: 30%;
+    background-color: rgba(97, 95, 94, 0.616);
+   
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 0 20px;
+}
+
+.inputs {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+
+}
+
+
+.text,.inputs select{
+    font-family: 'Bree Serif', serif;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    outline: 0;
+    vertical-align: middle;  
+}
+
+.text{
+    text-align: left;
+}
+
+.complete{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;    
+}
+
+
+.boton{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+.add{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    background-color: #0fa09b;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease all;
+}
+.add span{
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 30%;
+}
+
+.add::before{
+    content: "";
+    position: absolute;
+    background-color: none;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    border-radius:100px;
+    transition: .3s ease all;
+    transform-origin:center; /*Hace que crezca desde el centro*/
+}
+
+.add:hover::before {
+    background-color: rebeccapurple;
+    transform: scale(18);
+    
+
+}
+
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+.table{
+    overflow: hidden;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px 0 rgb(55, 53, 53);
+}
+
+.table-true{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-true thead{
+    background-color: rgba(94, 98, 101, 0.461);
+    font-size: 20px;
+    height: 50px;
+}
+
+.titulo{
+    text-transform: uppercase;
+}
+
+
+.cursos{
+    width: 100%;
+    gap: 20px;
+}
+
+.cursos> tr{
+    margin-top: 3px;
+    height: 60px;
+    border-bottom:1px solid rgba(51, 42, 42, 0.636);
+}
+
+.materia{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.on{
+    color: rgb(9, 125, 13);
+}
+
+.off{
+    color: red;
+}
+
+.error{
+    width: 60%;
+    height: 40px;
+    color: white;
+    background-color: rgb(192, 91, 91);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+
+}
+
+
+
+
+
